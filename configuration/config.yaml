@@ -1,0 +1,22 @@
+Logger:
+  Level: trace
+  File:
+    Enabled: false
+    FileName: log/shortener.log
+    MaxSize: 10
+    MaxBackups: 10
+    MaxAge: 10
+  SysLog:
+    Enabled: false
+    Address: ""
+    Network: ""
+    Tag: ""
+Server:
+  Address: "localhost"
+  Port: 8080
+  RTimeout: 30
+  WTimeout: 30
+Auth:
+  SecretKey: "your-super-secret-key-change-in-production"
+  CookieName: "gophkeeper_token"
+FileStoragePath: "data/storage.json"
